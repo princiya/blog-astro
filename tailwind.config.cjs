@@ -14,6 +14,11 @@ module.exports = {
         serif: ['var(--aw-font-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading)', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'logo': "url('/logo-black.svg')",
+        'logoDark': "url('/logo-white.svg')",
+        'hero': "url('/hero.png')",
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

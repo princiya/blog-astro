@@ -23,23 +23,26 @@ const meta = {
 <Layout {meta}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
+  <!-- <Hero
     callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
     callToAction2={{ text: 'Learn more', href: '#features' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+  > -->
+  <Hero
+    callToAction2={{ text: 'Read more...', href: '/about' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden lg:inline">create your website <br class="2xl:hidden"/> with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
+      Hi, I am
+      <span class="text-accent dark:text-white highlight"> Princiya!</span>
     </Fragment>
 
-    <Fragment slot="subtitle">
+   <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+        I love food and Javascript. And now I am getting Pythonised.
+      </span>
+      <!-- <span>
+        I am a skilled programmer with strong communication skills and a dozen years of experience building full-stack web & mobile apps, implementing CI/CD solutions and supporting infrastructures, including 5+ years of experience leading technical teams at scale.
+      </span> -->
     </Fragment>
   </Hero>
 
@@ -50,48 +53,48 @@ const meta = {
   <!-- Features Widget *************** -->
 
   <Features
-    highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    highlight="Accomplishments"
+    title="Around the Web"
+    subtitle="Things I am proud of"
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'WWCode Connect Recharge 2022 Keynote',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
+            'Presented a Keynote at Women Who Code Connect Recharge 2022 on the topic - Reset and Recharge: Humans need it too just like devices!',
+          icon: 'tabler:microphone',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'Featured in Forbes',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
+            'The Wisdom Of Women Leaders As They Forge The Post Pandemic Future',
+          icon: 'tabler:news',
         },
         {
-          title: 'Best Practices',
+          title: '100 Women in Tech',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:list-check',
+            'AgileTD Zone published a list of 100 Women in Tech to Follow and Learn from',
+          icon: 'tabler:woman',
         },
       ],
       [
         {
-          title: 'Excellent Page Speed',
+          title: 'PrototypeFund.de 2018 Fellow',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-          icon: 'tabler:rocket',
+            'PrototypeFund.de 2018 Fellow for Lightbeam to visualise first and third party website trackers.',
+          icon: 'tabler:school',
         },
         {
-          title: 'Search Engine Optimization (SEO)',
+          title: 'FreeCodeCamp Interview',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
+            'Abbey from FreeCodeCamp podcast chats with developer and wearer of many hats Princiya about how she changed careers, moved to Berlin, and worked her way up to a lead role.',
+          icon: 'tabler:brand-spotify',
         },
         {
-          title: 'Open to new ideas and contributions',
+          title: 'Young Leader of the Year 2019',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:bulb',
+            'Top 10 - Women in IT Awards, Europe',
+          icon: 'tabler:trophy',
         },
       ],
     ]}
