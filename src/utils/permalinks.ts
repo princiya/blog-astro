@@ -1,7 +1,13 @@
 import slugify from 'limax';
 
-import { SITE, BLOG } from '~/config.mjs';
-import { trim } from '~/utils/utils';
+import { SITE, BLOG } from '../config.mjs';
+import { trim } from './utils';
+
+export const getBasePathName = (): string => {
+  const envMode = import.meta.env.MODE; // development or production
+  
+  return envMode === 'production' ? SITE.basePathname : '/';
+}
 
 export const trimSlash = (s: string) => trim(trim(s, '/'));
 const createPath = (...params: string[]) => {
@@ -12,7 +18,7 @@ const createPath = (...params: string[]) => {
   return '/' + paths + (SITE.trailingSlash && paths ? '/' : '');
 };
 
-const BASE_PATHNAME = SITE.basePathname;
+const BASE_PATHNAME = getBasePathName();
 
 export const cleanSlug = (text = '') =>
   trimSlash(text)

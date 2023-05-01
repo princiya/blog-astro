@@ -3,8 +3,8 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Princiya Sequeira',
 
-  origin: 'https://princiya.com/iamprinciya',
-  basePathname: '/',
+  origin: 'https://princiya.com/',
+  basePathname: '/blog-astro',
   trailingSlash: false,
 
   title: 'Princiya Sequeira - personal website and blog',
@@ -25,7 +25,7 @@ const CONFIG = {
   }),
 
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+  // googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
   blog: {
     disabled: false,

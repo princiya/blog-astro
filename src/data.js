@@ -1,4 +1,6 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink, getAsset, getBasePathName } from './utils/permalinks';
+
+const BASE_PATHNAME = getBasePathName();
 
 export const headerData = {
   links: [
@@ -50,7 +52,7 @@ export const headerData = {
     // },
     {
       text: 'About',
-      href: getPermalink('/about'),
+      href: getPermalink(`${BASE_PATHNAME}/about`),
     },
     {
       text: 'Blog',
@@ -118,8 +120,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms', href: getPermalink(`${BASE_PATHNAME}/terms`) },
+    { text: 'Privacy Policy', href: getPermalink(`${BASE_PATHNAME}/privacy`) },
   ],
   socialLinks: [
     { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },

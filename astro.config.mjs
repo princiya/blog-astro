@@ -9,9 +9,12 @@ import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import compress from 'astro-compress';
-import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
 
+import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
+import { getBasePathName } from './src/utils/permalinks';
 import { SITE } from './src/config.mjs';
+
+const BASE_PATHNAME = getBasePathName();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -20,7 +23,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   site: SITE.origin,
-  base: SITE.basePathname,
+  base: BASE_PATHNAME,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',

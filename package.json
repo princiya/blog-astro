@@ -1,7 +1,7 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "A template to make your website using Astro + Tailwind CSS.",
-  "version": "0.9.8",
+  "name": "Princiya Sequeira personal website and blog",
+  "description": "A website and blog template using Astro + Tailwind CSS.",
+  "version": "0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
