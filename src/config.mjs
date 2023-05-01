@@ -3,7 +3,7 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Princiya Sequeira',
 
-  origin: 'https://princiya.com/',
+  origin: 'https://princiya.com',
   basePathname: '/blog-astro',
   trailingSlash: false,
 
